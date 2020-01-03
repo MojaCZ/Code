@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8" />
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <title>Page Title</title>
+ <link href="/Code/files/style.css" rel="stylesheet" type="text/css">
+ <script type="text/javascript" src="/Code/files/myLibrary.js"></script>
+ <script type="text/javascript" src="/Code/files/NN.js"></script>
+ <script type="text/javascript" src="/Code/files/Gauss.js"></script>
+ <script type="text/javascript" src="/Code/files/main.js"></script>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <h1>AHOJ</h1>
+  <canvas id="canvasPerceptron" style="border: 1px solid black;"></canvas>
+  <input id="a" type="range" name="a" min="1" max="100" value="50">
+  <label for="a">a</label>
+  <input id="b" type="range" name="b" min="0" max="500" value="250">
+  <label for="b">b</label>
+  <input id="p" type="range" name="p" min="100" max="1000" value="450">
+  <label for="p">Number of Points</label>
+  <input id="lr" type="range" name="learningRate" min="1" max="100" value="50">
+  <label for="learningRate">Learning Rate</label>
+  <input id="trainStep" type="button" value="START TRAINING">
+
+  </br>
+  </br>
+
+  <canvas id="canvasGauss" style="border: 1px solid black;"></canvas>
+  <input id="gaussPoints" name="gaussPoints" type="number" min="1" max="1000" value="100">
+  <label for="gaussPoints">Points to Generate</label>
+  <input id="mu" name="mu" type="range" min="-150" max="500" value="200">
+  <label for="mu">mu</label>
+  <input id="sigma" name="sigma" type="range" min="43" max="100" value="50">
+  <label for="sigma">sigma</label>
+  <input id="startGeneration" type="button" value="START GENERATING POINTS">
+
+  </br>
+  </br>
+
+  <canvas id="canvasEM" style="border: 1px solid black;"></canvas>
+  <input id="gaussPoints1" name="gaussPoints1" type="number" min="1" max="1000" value="100">
+  <label for="gaussPoints1">Points to Generate</label>
+  <input id="mu1" name="mu1" type="range" min="-150" max="500" value="100">
+  <label for="mu1">mu</label>
+  <input id="sigma1" name="sigma1" type="range" min="43" max="100" value="50">
+  <label for="sigma1">sigma</label>
+
+  <input id="gaussPoints2" name="gaussPoints2" type="number" min="1" max="1000" value="100">
+  <label for="gaussPoints2">Points to Generate</label>
+  <input id="mu2" name="mu2" type="range" min="-150" max="500" value="200">
+  <label for="mu2">mu</label>
+  <input id="sigma2" name="sigma2" type="range" min="43" max="100" value="50">
+  <label for="sigma2">sigma</label>
+
+  <input id="gaussPoints3" name="gaussPoints3" type="number" min="1" max="1000" value="100">
+  <label for="gaussPoints3">Points to Generate</label>
+  <input id="mu3" name="mu3" type="range" min="-150" max="500" value="300">
+  <label for="mu3">mu</label>
+  <input id="sigma3" name="sigma3" type="range" min="43" max="100" value="50">
+  <label for="sigma3">sigma</label>
+
+  <input id="startEM" type="button" value="START GENERATING POINTS">
+
+</body>
+</html>
